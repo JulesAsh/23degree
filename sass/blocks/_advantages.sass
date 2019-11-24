@@ -1,0 +1,35 @@
+.advantages
+    background-color: $backgroudColor
+    padding-bottom: 40px
+    &__list
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+        margin-top: 35px
+    &__item
+        text-align: center
+        flex-basis: 25%
+        margin-bottom: 30px
+    &-img
+        position: relative
+        padding-bottom: 13px
+        min-height: 90px
+        vertical-align: center
+        &::after
+            content: ""
+            display: block
+            position: absolute
+            width: 124px
+            height: 1px
+            background-color: $buttonColor
+            bottom: 0
+            right: 50%
+            transform: translateX(50%)
+    &__text
+        font-weight: 500
+        line-height: 20px
+        color: $secondaryTextColor
+        margin-top: 20px
+            
+            
