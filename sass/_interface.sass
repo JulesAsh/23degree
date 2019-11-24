@@ -1,0 +1,47 @@
+
+body 
+    font-family: 'Roboto', sans-serif
+    font-size: 14px
+    line-height: 120%
+    background-color: $mainTextColor
+* 
+    box-sizing: border-box
+h1,h2,h3,h4,p,ul
+    margin: 0
+    padding: 0
+ul
+    list-style: none
+a
+    text-decoration: none
+img
+    max-width: 100%
+.container
+    max-width: 1160px
+    padding: 0 10px
+    margin: 0 auto
+button
+    background-color: transparent
+    border: none
+    outline: none
+    color: $mainTextColor
+    cursor: pointer
+.section
+    &-title
+        font-size: 36px
+        font-weight: 300
+        line-height: 38px
+    &__title
+        text-align: center
+        margin: 0 auto
+        position: relative
+        max-width: 377px
+        padding: 50px 0 22px
+        &::after
+            content: ""
+            display: block
+            background-color: $buttonColor
+            width: 377px
+            height: 1px
+            position: absolute
+            bottom: 0
+            left: 0

@@ -5,8 +5,7 @@
     background-position: top center
     color: $mainTextColor
     &__top
-        display: flex
-        justify-content: space-between
+        @include flex-between
         align-items: center
         padding-top: 25px
     &__logo
@@ -29,7 +28,6 @@
         align-items: center
         justify-content: center
         flex-direction: column
-        
         &-text
             font-size: 12px
             font-weight: 500
@@ -67,9 +65,8 @@
         margin: 43px auto 15px 
         max-width: 890px
         &-group
-            display: flex
+            @include flex-between
             align-items: center
-            justify-content: space-between
     &__input
         width: 290px
         height: 51px
