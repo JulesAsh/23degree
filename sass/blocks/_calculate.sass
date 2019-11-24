@@ -1,0 +1,98 @@
+.calculate
+    background-image: url('../img/form-bg.jpg')
+    background-color: $titleColor
+    background-repeat: no-repeat
+    background-position: top center
+    color: $mainTextColor
+    &__content
+        @include flex-between
+        margin-top: 38px
+        padding-bottom: 65px
+    &__form
+        max-width: 665px
+        width: 100%
+.form
+    &__text
+        font-size: 26px
+        font-weight: 300
+        line-height: 28px
+        text-align: center
+    &__group
+        max-width: 655px
+        min-height: 130px
+        border: 1px solid $mainTextColor
+        border-radius: 5px
+        padding: 22px 23px
+        position: relative
+        margin-bottom: 8px
+    &__subtitle
+        font-size: 20px
+        font-weight: 400
+        line-height: 24px
+        display: block
+    &__pp
+        &-list
+            @include flex-between             
+.pp
+    &__description
+        position: absolute
+        max-width: 443px
+        width: 100%
+        background-color: $mainTextColor
+        color: $titleColor
+        border-radius: 5px
+        margin-top: 20px
+        transform: translateX(-50%)
+        &-light
+            left: 0
+        &-medium
+            left: 50%
+        &-full
+           right: -222px
+    &__info
+        padding: 21px 31px
+    &__tag
+        position: absolute
+        width: 25px
+        height: 25px
+        background-color: $mainTextColor
+        transform: rotate(45deg)
+        top: -12px
+        &-light
+            left: 25px
+        // &-medium
+            left: 50%
+        &-full
+            right: 25px
+.content
+    
+    &__info
+        max-width: 350px
+        text-align: center
+        margin-right: 75px
+.info
+    font-weight: 400
+    &__item
+        margin-bottom: 20px
+    &__text
+        font-size: 16px
+        margin-bottom: 7px
+    &__num
+        font-size: 32px
+        line-height: 35px
+    &__link
+        margin: 25px 0 20px
+    &-link
+        display: block
+        padding: 18px 31px
+        font-size: 14px
+        font-weight: 400
+        line-height: 16px
+        color: $mainTextColor
+        background-color: $buttonColor
+        border-radius: 30px
+
+    &__phone
+        font-size: 18px
+        font-weight: 500
+        margin-top: 6px
