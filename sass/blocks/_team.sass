@@ -1,0 +1,56 @@
+.team
+    padding-bottom: 65px
+    &__list
+        display: flex
+        justify-content: space-around
+        align-items: center
+        flex-wrap: wrap
+        margin-top: 40px
+    &__item
+        text-align: center
+        flex-basis: 33%
+        margin-bottom: 50px
+    &__img
+        border-radius: 50%
+    &__info
+        margin-top: 20px
+        &-name
+            color: $buttonColor
+            font-size: 24px
+            font-weight: 300
+            margin-bottom: 15px
+        &-text
+            font-size: 16px
+            font-weight: 300
+    &-quote
+        text-align: center
+        max-width: 945px
+        margin: 40px auto 0
+        position: relative
+        &::before
+            content: url('../img/icons/quote-top.png')
+            display: block
+            position: absolute
+            top: -30px
+            left: -67px
+        &::after
+            content: url('../img/icons/quote-bottom.png')
+            display: block
+            position: absolute
+            bottom: -15px
+            right: -67px
+.quote
+    font-weight: 300
+    &__title
+        color: $secondaryTextColor
+        font-size: 30px
+        margin-bottom: 15px
+    &__text,
+    span
+        font-size: 18px
+        font-weight: 300
+        line-height: 24px
+        margin-bottom: 15px
+    &__author
+        font-weight: 500
+        margin-bottom: 10px
