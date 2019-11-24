@@ -30,9 +30,52 @@
         font-weight: 400
         line-height: 24px
         display: block
+        margin-bottom: 18px
     &__pp
         &-list
-            @include flex-between             
+            @include flex-between
+        &-item
+            label 
+                position: relative
+            input 
+                display: none
+                &:checked ~ span
+                    background-color: $buttonColor
+                    border-color: $buttonColor
+        &-name
+            position: relative
+            display: inline-block
+            width: 192px 
+            background-color: transparent
+            border: 1px solid $mainTextColor
+            border-radius: 5px
+            text-align: center
+            padding: 14px 0
+            font-size: 16px
+            font-weight: 400
+            cursor: pointer
+            &:hover
+                background-color: $buttonColor
+                border-color: $buttonColor
+.range
+    width: 605px
+    height: 9px
+    appearance: none
+    border-radius: 5px
+    background-color: rgba(255, 255, 255, 0.5)
+    
+    outline: none
+.range::-webkit-slider-thumb
+    appearance: none
+    width: 23px
+    height: 23px
+    background-color: $mainTextColor
+    border-radius: 50%
+    &:hover
+        border: 9px solid $buttonColor
+
+
+
 .pp
     &__description
         position: absolute
@@ -91,7 +134,7 @@
         color: $mainTextColor
         background-color: $buttonColor
         border-radius: 30px
-
+        
     &__phone
         font-size: 18px
         font-weight: 500

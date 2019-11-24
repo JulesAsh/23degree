@@ -79,28 +79,31 @@ html(lang="en")
                         form.calculate__form
                             .form__group
                                 p.form__subtitle Площадь помещения:
-                                input(id="ran" type='range' min="100" max="500000" step="100")
+                                input(id="ran" type='range' min="100" max="500000" step="100").range
                             .form__group
                                 p.form__subtitle Выберите пакет:
                                 .form__pp-list
                                     .form__pp-item
-                                        label(for="light") Light
-                                        input(id="light" type='radio')
+                                        label(for="light")
+                                            input(id="light" value="light" type='radio' name="plan")
+                                            span.form__pp-name Light
                                         //- .pp__description.pp__description-light
                                         //-     .pp__tag.pp__tag-light
                                         //-     p.pp__info План расстановки мебели 3D визуализация. Все рабочие чертежи (план полов, план потолка, развертки по стенам, план электросетей)
                                     .form__pp-item 
-                                        label(for="medium") Medium
-                                        input(id="medium" type='radio')
+                                        label(for="medium")
+                                            input(id="medium" type='radio' name="plan")
+                                            span.form__pp-name Medium
                                         //- .pp__description.pp__description-medium
                                         //-     .pp__tag.pp__tag-medium
                                         //-     p.pp__info План расстановки мебели 3D визуализация. Все рабочие чертежи (план полов, план потолка, развертки по стенам, план электросетей)
                                     .form__pp-item   
-                                        label(for="full") Full
-                                        input(id="full" type='radio')
-                                        .pp__description.pp__description-full
-                                            .pp__tag.pp__tag-full
-                                            p.pp__info План расстановки мебели 3D визуализация. Все рабочие чертежи (план полов, план потолка, развертки по стенам, план электросетей)
+                                        label(for="full")
+                                            input(id="full" type='radio' name="plan")
+                                            span.form__pp-name Full
+                                        //- .pp__description.pp__description-full
+                                        //-     .pp__tag.pp__tag-full
+                                        //-     p.pp__info План расстановки мебели 3D визуализация. Все рабочие чертежи (план полов, план потолка, развертки по стенам, план электросетей)
                         .content__info
                             ul.info__list
                                 li.info__item
