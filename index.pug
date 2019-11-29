@@ -38,12 +38,13 @@ html(lang="en")
                         input(type="submit" value="Оставить заявку!").hero__button
                     p.hero__subtext *Мы гарантируем конфидициальность передаваемых данных
                     .hero__scroll
-                        img(src="img/icons/scroll-icon.png" alt="scroll icon")
+                        a(href="#services").scroll
+                            img(src="img/icons/scroll-icon.png" alt="scroll icon")
     main
         section.services
             .container
                 .services-block
-                    h2.section-title.section__title Наши услуги
+                    h2.section-title.section__title#services Наши услуги
                     ul.services__list.section-list
                         li.services__item
                             .services-img.order__img
@@ -119,6 +120,77 @@ html(lang="en")
                                 a(href="").info-link Получить консультацию специалиста
                             .info__subtext или позвоните нам по телефону:
                             .info__phone + 7 727 388 71 77
+        section.portfolio#portfolio
+            .container
+                .portfolio__block
+                    h2.section__title.section-title Портфолио
+                    ul.portfolio__list
+                        li.portfolio__item
+                            a(href="#portfolio").portfolio__link#a-1 все проекты
+                        li.portfolio__item
+                            a(href="#portfolio").portfolio__link#a-2 экстерьеры
+                        li.portfolio__item
+                            a(href="#portfolio").portfolio__link#a-3 жилые интерьеры 
+                        li.portfolio__item
+                            a(href="#portfolio").portfolio__link#a-4 общественные интерьеры
+                    
+                    
+                    .portfolio__images    
+                        .portfolio-images#portfolio-card-1.active
+                            .portfolio__images-item
+                                img(src="img/portfolio/portfolio-1.jpg", alt="")
+                            .portfolio__images-item    
+                                img(src="img/portfolio/portfolio-2.jpg", alt="")
+                            .portfolio__images-item    
+                                img(src="img/portfolio/portfolio-3.jpg", alt="")
+                            .portfolio__images-item    
+                                img(src="img/portfolio/portfolio-4.jpg", alt="")
+                            .portfolio__images-item    
+                                img(src="img/portfolio/portfolio-5.jpg", alt="")
+                            .portfolio__images-item    
+                                img(src="img/portfolio/portfolio-6.jpg", alt="")
+                    .portfolio__images
+                        .portfolio-images#portfolio-card-2
+                            .portfolio__images-item
+                                img(src="img/portfolio/portfolio-6.jpg", alt="")
+                            .portfolio__images-item    
+                                img(src="img/portfolio/portfolio-5.jpg", alt="")
+                            .portfolio__images-item    
+                                img(src="img/portfolio/portfolio-4.jpg", alt="")
+                            .portfolio__images-item    
+                                img(src="img/portfolio/portfolio-3.jpg", alt="")
+                            .portfolio__images-item    
+                                img(src="img/portfolio/portfolio-2.jpg", alt="")
+                            .portfolio__images-item    
+                                img(src="img/portfolio/portfolio-1.jpg", alt="")
+                    .portfolio__images
+                        .portfolio-images#portfolio-card-3
+                            .portfolio__images-item
+                                img(src="img/portfolio/portfolio-3.jpg", alt="")
+                            .portfolio__images-item    
+                                img(src="img/portfolio/portfolio-2.jpg", alt="")
+                            .portfolio__images-item    
+                                img(src="img/portfolio/portfolio-1.jpg", alt="")
+                            .portfolio__images-item    
+                                img(src="img/portfolio/portfolio-6.jpg", alt="")
+                            .portfolio__images-item    
+                                img(src="img/portfolio/portfolio-5.jpg", alt="")
+                            .portfolio__images-item    
+                                img(src="img/portfolio/portfolio-4.jpg", alt="")
+                    .portfolio__images
+                        .portfolio-images#portfolio-card-4
+                            .portfolio__images-item
+                                img(src="img/portfolio/portfolio-5.jpg", alt="")
+                            .portfolio__images-item    
+                                img(src="img/portfolio/portfolio-1.jpg", alt="")
+                            .portfolio__images-item    
+                                img(src="img/portfolio/portfolio-4.jpg", alt="")
+                            .portfolio__images-item    
+                                img(src="img/portfolio/portfolio-2.jpg", alt="")
+                            .portfolio__images-item    
+                                img(src="img/portfolio/portfolio-6.jpg", alt="")
+                            .portfolio__images-item    
+                                img(src="img/portfolio/portfolio-3.jpg", alt="")
         section.advantages
             .container
                 .advantages__block
@@ -151,7 +223,7 @@ html(lang="en")
         section.process
             .container
                 .process-block
-                    h2.section-title.section__title Наши услуги
+                    h2.section-title.section__title Процесс взаимодействия
                     ul.process__list.section-list
                         li.process__item
                             .process-img.order__img
@@ -169,6 +241,25 @@ html(lang="en")
                             .process-img
                                 img(src="img/process/process-4.jpg", alt="").process__img
                             p.process-text Завершение
+        section.clients
+            .container
+                .clients-block
+                    h2.section-title.clients__title Нам доверяют более 50 компаний
+                    ul.clients__list
+                        li.clients__item
+                            img(src="img/partners/partners-1.png", alt="")
+                        li.clients__item
+                            img(src="img/partners/partners-2.png", alt="")
+                        li.clients__item
+                            img(src="img/partners/partners-3.png", alt="")
+                        li.clients__item
+                            img(src="img/partners/partners-4.png", alt="")
+                        li.clients__item
+                            img(src="img/partners/partners-5.png", alt="")
+                        li.clients__item
+                            img(src="img/partners/partners-6.png", alt="")
+                        li.clients__item
+                            img(src="img/partners/partners-7.png", alt="")
         section.team
             .container
                 .team__block
@@ -228,7 +319,76 @@ html(lang="en")
                             a(href="#").blog__link
                                 img(src="img/blog/blog-2.jpg", alt="" heigth="320").blog__img
                                 p.blog__title Прованс - это спокойный южный регион Франции, с великолепнейшей природой
-
-        footer
+        section.ask
             .container
-    script
+                .ask__block
+                    h2.ask__title.form-title Остались вопросы?
+                    p.form__text Задайте их в форме ниже и наши специалисты свяжуться с Вами!
+                    .ask__content
+                        .ask__form
+                            form
+                                .ask__form-group
+                                    input(type="text" placeholder="Ваше имя").ask__input
+                                    input(type="email" placeholder="Ваш e-mail").ask__input
+                                    input(type="tel" placeholder="Ваш номер телефона").ask__input
+                                .ask__form-group
+                                    textarea(name="", placeholder="Ваше сообщение")
+                                input(type="submit" value="Оставить заявку!").ask__btn
+                        .ask__contacts
+                            ul.ask__list
+                                li.ask__item
+                                    .ask__img
+                                        img(src="img/icons/call-icon.png", alt="")
+                                    p.ask__item-text + 7 896 876 66 77
+                                li.ask__item
+                                    .ask__img
+                                        img(src="img/icons/Whatsapp-icon.png", alt="")
+                                    p.ask__item-text + 7 896 876 66 77
+                                li.ask__item
+                                    .ask__img
+                                        img(src="img/icons/mail-icon.png", alt="")
+                                    p.ask__item-text sales@23degree.kz
+                                li.ask__item
+                                    .ask__img
+                                        img(src="img/icons/skype-icon.png", alt="")
+                                    p.ask__item-text skype: 23degree
+                                li.ask__item
+                                    .ask__img
+                                        img(src="img/icons/telegram-icon.png", alt="")
+                                    p.ask__item-text telegram: 23degree
+                            .ask__schedule График работы: с 9-00 до 18-00. Пн.-Пт.
+        //- section.map
+        //-     script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A295334ac8396e1199b23e4bc38fc8177a6cbbcc1b796e01593a93294073835ff&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true")
+        footer.footer
+            .container
+                .footer__content
+                    .footer-nav
+                        ul.footer__list
+                            li.footer__item
+                                a(href="").footer__link Главная
+                            li.footer__item
+                                a(href="").footer__link Тарифы 
+                        ul.footer__list        
+                            li.footer__item
+                                a(href="").footer__link Вопросы-ответы
+                            li.footer__item
+                                a(href="").footer__link Личный кабинет
+                        ul.footer__list        
+                            li.footer__item
+                                a(href="").footer__link Новости
+                            li.footer__item
+                                a(href="").footer__link Договор публичной оферты
+                    .footer__socials
+                        p.socials__text Мы в социальных сетях:
+                        ul.socials__list
+                            li.socials__item
+                                a(href="#")
+                                    img(src="img/icons/facebook-icon.png", alt="facebook")
+                            li.socials__item 
+                                a(href="#")
+                                    img(src="img/icons/google-icon.png", alt="google+")
+                            li.socials__item 
+                                a(href="#")
+                                    img(src="img/icons/insta-icon.png", alt="instagram")
+    script(src="https://code.jquery.com/jquery-3.4.1.min.js"  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous")
+    script(src="js/main.js")

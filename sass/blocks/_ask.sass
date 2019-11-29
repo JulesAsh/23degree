@@ -1,0 +1,82 @@
+.ask
+    background-image: url('../img/question-bg.jpg')
+    background-color: $titleColor
+    background-repeat: no-repeat
+    background-position: top center
+    color: $mainTextColor
+    padding-bottom: 58px
+    &__title
+        text-align: center
+        margin: 0 auto 22px
+        position: relative
+        max-width: 377px
+        padding: 53px 0 23px
+        &::after
+            content: ""
+            display: block
+            background-color: $mainTextColor
+            width: 377px
+            height: 1px
+            position: absolute
+            bottom: 0
+            left: 0
+    &__content
+        display: flex
+        margin-top: 45px
+    &__contacts
+        margin-left: 52px
+    &__item
+        display: flex
+        align-items: center
+        margin-bottom: 15px
+    &__img
+        display: flex
+        align-items: center
+        justify-content: center
+        border: 1px solid $mainTextColor
+        width: 27px
+        height: 27px
+        margin-right: 15px
+        border-radius: 2px
+    &__schedule
+        font-size: 16px
+        font-weight: 300
+        line-height: 24px
+        margin-top: 25px
+    &__btn
+        font-size: 15px
+        font-weight: 500
+        background-color: $buttonColor
+        padding: 20px 45px
+        border-radius: 30px
+        border: none
+        color: $mainTextColor
+        font-weight: 500
+    
+    &__form
+        max-width: 750px
+        text-align: center
+        &-group
+            @include flex-between
+            margin-bottom: 15px
+            
+
+    &__input
+        width: 240px
+        height: 50px
+        padding: 19px
+        border-radius: 5px
+        border: 1px solid $inputBorderColor
+        outline-color: transparent
+    input::placeholder
+        color: $placeholderColor
+        font-size: 13px
+        font-weight: 300
+    textarea
+        width: 750px
+        height: 125px
+        resize: none
+        border-radius: 5px
+        border: 1px solid $inputBorderColor
+        outline-color: transparent
+        padding: 20px

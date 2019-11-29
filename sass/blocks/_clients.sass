@@ -1,0 +1,24 @@
+.clients
+    background-color: $backgroudColor
+    padding-bottom: 75px
+    &__title
+        text-align: center
+        margin: 0 auto
+        position: relative
+        max-width: 575px
+        padding: 50px 0 22px
+        &::after
+            content: ""
+            display: block
+            background-color: $buttonColor
+            width: 377px
+            height: 1px
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translateX(-50%)
+    &__list
+        @include flex-between
+        align-items: center
+        margin-top: 35px
+
